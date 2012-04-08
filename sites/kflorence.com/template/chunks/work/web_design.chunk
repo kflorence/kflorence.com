@@ -1,0 +1,33 @@
+<?php
+$database->query = "SELECT *, DATE_FORMAT(date,'%Y') as date " .
+    "FROM portfolio WHERE section='" . $url->section . "' ORDER BY id DESC";
+
+// Make sure we have results
+if ($database->hasResults($r = $database->query())): ?>
+<div class="portfolio">
+  <div class="controls">
+    <div class="prev-next">
+      <a class="prev">previous</a>
+      <a class="next">next</a>
+    </div>
+    <div class="navi"></div>
+  </div>
+
+  <div class="scrollable">
+    <div class="items">
+<?php foreach($database->fetchAll($r) as $row): ?>
+      <div class="item">
+        <img src="<?php p(f('url')->build('images', 'portfolio', $row->image))?>" alt="<?php p($row->title)?> | <?php p($row->section)?>" />
+        <ul>
+          <li class="title"><?php p(empty($row->link) ? $row->title : '<a href="'.$row->link.'" title="'.$row->link.'">'.$row->title.'</a>')?></li>
+          <li class="brief"><?php p($row->brief)?></li>
+          <li class="description"><?php p(nl2br($row->details))?></li>
+        </ul>
+      </div>
+<?php endforeach; ?>
+    </div>
+  </div>
+</div>
+<?php else: ?>
+<p>No results were found.</p>
+<?php endif; ?>

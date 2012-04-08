@@ -1,0 +1,10 @@
+<?php $pager->output();?>
+
+    <ul id="tutorials">
+<?php foreach($database->fetchAll($database->result) as $row): ?>
+      <li>
+        <h5><a href="<?php p($url->build('play', 'tutorials', $row->id))?>" title="<?php p($row->title)?>"><?php p($row->title)?></a><span><?php p($row->category)?></span></h5>
+        <p><?php p($row->description)?></p>
+      </li>
+<?php endforeach;?>
+    </ul>

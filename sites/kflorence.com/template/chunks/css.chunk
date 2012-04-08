@@ -1,0 +1,3 @@
+<?php if (isset(f('template')->css)): foreach(f('template')->css as $css): ?>
+    <link rel="stylesheet" href="<?php p($css)?>" type="text/css" media="screen" />
+<?php endforeach; endif;?>

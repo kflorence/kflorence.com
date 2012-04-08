@@ -1,0 +1,8 @@
+<?php if (count(Error::get())):?>
+        <ul class="errors">
+<?php   foreach(Error::get() as $error):
+            list($class, $error) = explode(':::', $error); ?>
+          <li>[Source: <em><?php p($class);?></em>] <strong><?php p($error);?></strong></li>
+<?php   endforeach;?>
+        </ul>
+<?php endif;?>

@@ -1,0 +1,29 @@
+<?php
+
+f('template')->loadChunk('header');
+
+switch(f('url')->section)
+{
+    // Projects
+    case 'projects':
+    {
+        f('template')->loadChunk('projects');
+        break;
+    }
+
+    // Tutorials
+    case 'tutorials':
+    {
+        f('template')->loadChunk('tutorials');
+        break;
+    }
+
+    // 404 Error
+    default:
+    {
+        f('template')->loadChunk('errors/404');
+        break;
+    }
+}
+
+f('template')->loadChunk('footer');

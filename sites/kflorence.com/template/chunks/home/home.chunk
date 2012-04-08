@@ -1,0 +1,51 @@
+<?php
+// Set up featured item
+$database->query = "SELECT *, DATE_FORMAT(date,'%Y') as date " .
+    "FROM portfolio WHERE section='web_design' ORDER BY id DESC LIMIT 1";
+
+// Make sure we have results
+if (count($row = $database->fetchRow())): ?>
+        <div class="featured">
+          <h3>Featured Work</h3>
+          <a href="<?php p(f('url')->build('work', 'web_design'))?>" title="visit my web design portfolio">
+            <img src="<?php p(f('url')->build('images', 'portfolio', $row->image))?>" alt="<?php p($row->title)?> | <?php p($row->section)?>" />
+          </a>
+          <!--
+          <ul>
+            <li class="title"><?php p(empty($row->link) ? $row->title : '<a href="'.$row->link.'" title="'.$row->link.'">'.$row->title.'</a>')?></li>
+            <li class="brief"><?php p($row->brief)?></li>
+          </ul>
+          -->
+        </div>
+<?php endif; ?>
+
+        <h3>Who I am</h3>
+        <div class="section">
+          <p>Hey there.  My name is Kyle Florence (which is probably quite obvious at this point)
+          and what you are viewing is my little home on the web.  I am a web designer, developer
+          and programmer by trade, but I also enjoy digital and film-based photography and video
+          game development.  I am a huge fan of web standards and accessibility, hand coding,
+          open source technologies and products and user customization.  Want to know more?
+          Have a look at the <a href="<?php p(f('url')->build('me', 'about'))?>" title="about me">about me</a> section.
+          </p>
+        </div>
+
+        <h3>What I do</h3>
+        <div class="section">
+          <p>As a web designer and developer, I understand the importance of both the aesthetic
+          (layout, graphics, design and medium) and semantic (content, message and logic) aspects
+          of web development and feel that the relationship between the two should be balanced.
+          This has led me to specialize in clean, minimal and professional layout designs that are built
+          on a hand-coded, structured, accessible and web standards compliant code architecture.  In
+          other words, I build beautiful websites that clearly convey their message and reach the widest
+          audience possible.  If you're interested in learning more about my skills and expertise,
+          make sure you check out <a href="<?php p(f('url')->build('me', 'resume'))?>" title="my resume">my resume</a>.
+          </p>
+        </div>
+
+        <div class="quote">
+          <blockquote>
+            <p>The beauty of life is, while we cannot undo what is done, we can see it, understand it, learn from it and change. So that every new moment is spent not in regret, guilt, fear or anger, but in wisdom, understanding and love.</p>
+          </blockquote>
+          <cite>Jennifer Edwards</cite>
+        </div>

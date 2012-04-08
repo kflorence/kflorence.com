@@ -1,0 +1,17 @@
+          </div><!-- end #main -->
+        </div><!-- end #content -->
+      </div><!-- end #container -->
+
+      <div id="footer"><!-- start #footer -->
+        <ul>
+          <li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate CSS">css</a></li>
+          <li><a href="http://validator.w3.org/check/referer" title="Validate XHTML">xhtml</a></li>
+          <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons License">&#169;</a></li>
+        </ul>
+      </div><!-- end #footer -->
+    </div><!-- end #wrapper -->
+
+    <!-- for IE -->
+    <script type="text/javascript">Cufon.now();</script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+            <ul class="ul-inline np nmb">
+              <li><strong>Kyle Florence</strong></li>
+              <li>(<a href="<?php p(f('url')->build('me', 'contact'))?>" title="contact me">&#107;&#121;&#108;&#101;&#046;&#102;&#108;&#111;&#114;&#101;&#110;&#099;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>)</li>
+              <li>386 W Yucca Ct</li>
+              <li>St. George, UT 84738</li>
+            </ul>
+            <p class="npt"><em>Principals only, no recruiters please.</em></p>
+
+            <h3>Objectives</h3>
+            <div class="section">
+              <p>My passion for learning new techniques and my intense desire to create have led me to a B.A. in Multimedia
+              where I've specialized in web development, video game development and online user interaction.
+              With my knowledge of both the programming and design side of web and video game development, I hope to find work
+              in a related field where I will be able to expand and improve upon my current skill set, meet like-minded individuals,
+              and most importantly have fun in the process!</p>
+            </div>
+
+            <h3>Skill Set</h3>
+            <div class="section">
+              <h4>Software</h4>
+
+              <div class="section">
+                <p>Though my specialty has been in web design and programming, I have also explored 3D level design,
+                photography and video game development.  This, coupled with the general knowledge I have learned in
+                school, has given me experience with a broad array of software.  This is by no means a limit to what
+                I can do but simply a list of my proficiencies thus far.  I am a fast learner and will excel with any
+                program given proper time and training.</p>
+
+                <ul class="ul-bullets npb">
+                  <li>Very proficient with Adobe Photoshop, Adobe InDesign, Microsoft Word, Windows OS, Internet Explorer 6+, Opera 7+, Safari 3+, and Firefox 1.5+</li>
+                  <li>Proficient with Adobe Illustrator, Microsoft Powerpoint, Linux (Debian distros), Apache, Mac OS X, Valve Hammer Editor, Eclipse and <acronym title="Subversion">SVN</acronym></li>
+                  <li>Experience with Adobe Flash, <acronym title="The GNU Image Manipulation Program">GIMP</acronym>, <acronym title="Bourne-Again Shell">Bash</acronym> and <acronym title="Secure Shell">SSH</acronym></li>
+                </ul>
+              </div>
+
+              <h4>Programming</h4>
+
+              <div class="section">
+                <p>Clean, minimal and professional design have always been my specialties.  I am a very detail
+                oriented individual and I put that to practice in every website that I craft.  My designs
+                will always be hand-coded, <a href="http://www.w3.org/" title="The World Wide Web Consortium">web standards</a>
+                compliant and validated in order to be cross-platform and cross-browser friendly and as
+                <a href="http://www.w3.org/WAI/" title="Web Accessibility Initiative">accessible</a> as possible for those with
+                disabilities.  They will be optimized for fast load times and will put the focus on the content and message rather
+                than being graphic heavy, bloated and trendy.  Functionality is paramount!  I am a mostly self-taught programmer
+                and I enjoy learning and experimenting with new languages and technologies whenever time allows. The list below contains
+                the languages I have experience with in order of proficiency but do not reflect the limits of my knowledge.</p>
+
+                <ul class="ul-bullets npb">
+                  <li>Very proficient with <acronym title="Hypertext Preprocessing">PHP</acronym>, <acronym title="Regular Expressions">RegEx</acronym>, <acronym title="My Structured Query Language">MySQL</acronym>, <acronym title="Extensible Hypertext Markup Language">XHTML</acronym> and <acronym title="Cascading Style Sheets">CSS</acronym></li>
+                  <li>Proficient with JavaScript, jQuery, Prototype, <acronym title="Extensible Markup Language">XML</acronym>, <acronym title="Asynchronous JavaScript and XML">AJAX</acronym> and Java</li>
+                  <li>Experience with Python, C/C++ and ActionScript</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3>Work Experience</h3>
+            <div class="section">
+              <h4>2009</h4>
+              <ul class="npb">
+                <li><strong>Web Developer</strong> (PHP + MySQL + XHTML + CSS + JavaScript)</li>
+                <li>Eideticink, LLC.</li>
+                <li><a href="http://www.eideticink.com/" title="Eideticink, LLC.">http://www.eideticink.com/</a></li>
+                <li>
+                  <div class="details">
+                    <p>Using the framework I developed for Anobleworld as a starting point, I was able to develop a new
+                    framework with improved features and functionality for this project which included new classes for
+                    pagination, tabulation and integration with an underlying java-based application.  In addition to the
+                    new classes, most of the old classes were reworked for improved stability and functionality.  Along with
+                    the backend PHP and MySQL work, I also designed a simple, functional layout to sit on top of the backend
+                    and work as a presentation of the underlying data structures.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <h4>2008-2009</h4>
+              <ul class="npb">
+                <li><strong>Backend Programmer</strong> (PHP + MySQL)</li>
+                <li>Anobleworld S3, Inc.</li>
+                <li><a href="http://www.anobleworld.com/" title="Anobleworld S3, Inc.">http://www.anobleworld.com/</a></li>
+                <li>
+                  <div class="details">
+                    <p>Developed a custom, scalable PHP framework that includes a fully customizable templating system,
+                    cookie, session and server request processing, form validation and graceful error reporting.
+                    Remotely set up a CentOS web server and successfully deployed the entire LAMP
+                    environment, including code management over an SVN repository.  I plan on continuing development
+                    of this framework with the eventual hopes of releasing it under an open source license.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <h4>2008</h4>
+              <ul class="npb">
+                <li><strong>Layout Designer</strong> (PHP + MySQL + XHTML + CSS)</li>
+                <li>Active Dimension, LLC</li>
+                <li><a href="http://www.activedimension.com/" title="Active Dimension, LLC">http://www.activedimension.com/</a></li>
+                <li>
+                  <div class="details">
+                    <p>I worked on a small team to transform <acronym title="Photoshop Document">PSD</acronym> layouts into XHTML and CSS.
+                    The layouts were then sliced into pieces and plugged into the underlying PHP framework system. I also built and modified
+                    framework modules using PHP and MySQL as required.  Code modifications and submissions were monitored over
+                    SVN repositories and all development was performed in a LAMP environment.</p>
+
+                    <p>Live examples:</p>
+                    <ul class="ul-bullets">
+                      <li><a href="http://www.marinade.com/">http://www.marinade.com/</a></li>
+                      <li><a href="http://www.diamonddeals.com/">http://www.diamonddeals.com/</a></li>
+                      <li><a href="http://www.gamerpc.com/">http://www.gamerpc.com/</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="npb">
+                <li><strong>Web Developer</strong> (PHP + MySQL + XHTML + CSS)</li>
+                <li>GlobalPitch, Inc.</li>
+                <li><a href="http://www.globalpitch.com/" title="GlobalPitch, Inc.">http://www.globalpitch.com/</a></li>
+                <li>
+                  <div class="details">
+                    <p>Actively developed and incorporated new features into their existing framework, tracked and fixed bugs
+                    and worked with the rest of the globalpitch team to get things done as quickly and efficiently as possible.
+                    Work was done in a LAMP environment using SVN repositories for code management.</p>
+
+                    <p>Live examples:</p>
+                    <ul class="ul-bullets">
+                      <li><a href="http://www.globalpitch.com/index/promote/pbinfo">Profile Blaster promotions page</a></li>
+                      <li><a href="http://www.globalpitch.com/my/importer">Contacts Blaster</a> (must be logged in)</li>
+                      <li><a href="http://www.globalpitch.com/my/blaster">Profile Blaster</a> (must be logged in)</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <h4>2007-2008</h4>
+              <ul class="npb">
+                <li><strong>Lead Web Developer</strong> (PHP + MySQL + XHTML + CSS + JavaScript)</li>
+                <li>San Diego State University, Art Department</li>
+                <li><a href="http://art.sdsu.edu/" title="SDSU School of Art, Design, and Art History">http://art.sdsu.edu/</a></li>
+                <li>
+                  <div class="details">
+                    <p>I was hired by the art department at the university to re-design and re-develop their aging departmental website.
+                    I worked with the art lab's IT consultant and the faculty and staff to brainstorm design concepts and site functionality
+                    requirements.  Over the nearly one and a half years of work on the project, I was able to update their static website
+                    into a feature rich, database-driven web resource for faculty, staff and current and prospective students.</p>
+
+                    <p>My work included a custom built content management system for adding and modifying site-wide content, a fully
+                    operational events calendar application, a page builder application complete with a custom lightweight markup language,
+                    faculty and staff biographies and portfolios, student work galleries and an accessibility compliant frontend layout
+                    design which features a panoramic view of the department buildings that changes depending on the time of day.</p>
+
+                    <p>Live examples:</p>
+                    <ul class="ul-bullets">
+                      <li><a href="http://art.sdsu.edu/school_information/website_information/" title="Website Information">Website Information</a></li>
+                      <li><a href="http://art.sdsu.edu/news_and_events/events_calendar/" title="Events Calendar">Events Calendar</a></li>
+                      <li><a href="http://art.sdsu.edu/faculty_and_staff/directory/kyle_florence/" title="My Biography and Portfolio">My Staff Biography</a></li>
+                      <li><a href="http://art.sdsu.edu/areas_of_study/view_student_work/" title="Student Work Galleries">Student Work Galleries</a></li>
+                      <li><a href="http://art.sdsu.edu/cms/help/faq/17/" title="PBMarkup">PBMarkup</a> (see: <a href="http://art.sdsu.edu/cms/help/faq/16/" title="What is PBMarkup?">What is PBMarkup?</a>)</li>
+                      <li><a href="http://art.sdsu.edu/cms/" title="art.sdsu.edu CMS">Content Management System</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+
+              <h4>2005</h4>
+              <ul class="npb">
+                <li><strong>Layout Designer</strong> (XHTML + CSS)</li>
+                <li>Pine Creek Hosting Company</li>
+                <li>
+                  <div class="details">
+                    <p>Designed five web standards compliant website layouts for an upcoming project.
+                    The layouts were to be clearn, simple and easy to integrate with a backend template system.
+                    Each layout included valid, standards compliant XHTML and CSS, as well as five different color
+                    schemes and graphics.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <h4>2004</h4>
+              <ul class="npb">
+                <li><strong>Project Founder</strong> (PHP + MySQL + XHTML + CSS)</li>
+                <li>Quotes Database System (QdbS)</li>
+                <li><a href="http://archive.kflorence.com/projects/qdbs/" title="Quotes Database System">http://archive.kflorence.com/projects/qdbs/</a></li>
+                <li>
+                  <div class="details">
+                    <p>Wrote a custom built quotes database storage system for online conversations (most notably IRC) on
+                    a PHP and MySQL backend.  The Project included administrative tools, custom templating and browsing,
+                    searching and rating options.  Though the project is still under development, due to time constraints I
+                    have passed this project on to <a href="http://www.qdbs.org/" title="Quotes Database System">another developer</a>
+                    under a GNU license.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <h4>2003</h4>
+              <ul class="npb">
+                <li><strong>Backend Programmer</strong> (PHP + MySQL)</li>
+                <li>Michael Blanchard Photography</li>
+                <li><a href="http://www.michaelblanchard.com/" title="Michael Blanchard Photography">http://www.michaelblanchard.com/</a></li>
+                <li>
+                  <div class="details">
+                    <p>Wrote and developed the backend for an online photo gallery using PHP and MySQL.  The site has since been redesigned.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <h3>Education</h3>
+            <div class="section">
+              <h4>2006-2008</h4>
+              <ul>
+                <li><strong>San Diego State University</strong></li>
+                <li>5500 Campanile Drive, San Diego, CA 92182</li>
+                <li><a href="http://sdsu.edu/" title="San Diego State University">http://sdsu.edu/</a></li>
+                <li>
+                  <p>Graduated Summa Cum Laude in 2008 with a B.A. in Multimedia.<br />
+                  Awarded the 2008 <em>Outstanding Graduate</em> for the School of Art, Design and Art History.</p>
+                </li>
+              </ul>
+
+              <h4>2004-2006</h4>
+              <ul class="npb">
+                <li><strong>Longwood University</strong></li>
+                <li>201 High Street, Farmville, Virginia 23909</li>
+                <li><a href="http://longwood.edu/" title="Longwood University">http://longwood.edu/</a></li>
+                <li>
+                  <p>Attended for two years of undergraduate studies in Graphic Design.</p>
+                </li>
+              </ul>
+            </div>
+
+            <h3>Download My Resume</h3>
+            <p><a href="http://www.adobe.com/products/acrobat/" title="Adobe Acrobat">Adobe Acrobat</a> PDF: <a class="icon pdf" href="http://archive.kflorence.com/florence_resume.pdf">florence_resume.pdf (27kb)</a></p>

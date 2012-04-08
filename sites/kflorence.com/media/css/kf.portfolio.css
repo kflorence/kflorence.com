@@ -1,0 +1,153 @@
+/*      =================================================================
+        Portfolio styles
+        =================================================================       */
+
+/*      -----------------------------------------------------------------
+        JavaScript-disabled/enabled styles
+        -----------------------------------------------------------------       */
+
+        .portfolio { margin-top: 10px; }
+        .portfolio .controls { display: none; }
+        .portfolio .item { margin-bottom: 10px; }
+
+        .portfolio.javascript { margin-top: 0; }
+        .portfolio.javascript .controls { display: block; }
+        .portfolio.javascript .item { margin-bottom: 10px; }
+
+/*      -----------------------------------------------------------------
+        jQuery Tools : Scrollable
+        -----------------------------------------------------------------       */
+
+/*      Required settings                                                       */
+        .portfolio.javascript .scrollable {
+            width: 580px;
+            /*height: 580px;*/
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            }
+
+/*      Scrollable items list                                                   */
+        .portfolio.javascript .scrollable .items {
+            clear: both;
+            width: 20000em;
+            position: absolute;
+            }
+
+/*      Single scrollable item                                                  */
+        .portfolio.javascript .scrollable .item {
+            float: left;
+            width: 580px;
+            }
+
+/*      -----------------------------------------------------------------
+        Previous/Next Controls
+        -----------------------------------------------------------------       */
+
+        .portfolio .controls {
+            height: 20px;
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+            background-color: #eee;
+            border-bottom: #bbb 1px solid;
+            }
+
+        .portfolio .prev-next { float: left; }
+
+        .portfolio .prev-next a {
+            float: left;
+            width: 20px;
+            height: 0px;
+            display: block;
+            cursor: pointer;
+            overflow: hidden;
+            padding-top: 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            background-color: transparent;
+            }
+
+        .portfolio .prev {
+            background-image: url('../images/site/prev.gif');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            }
+
+        .portfolio .next {
+            background-image: url('../images/site/next.gif');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            }
+
+        .portfolio .prev-next a:hover {
+            background-color: #3795ed;
+            background-position: -20px 0;
+            }
+
+/*      -----------------------------------------------------------------
+        Page Navigation
+        -----------------------------------------------------------------       */
+
+        .portfolio .navi {
+            margin: 0;
+            padding: 0;
+            float: right;
+            list-style: none;
+            }
+
+        .portfolio .navi a {
+            width: 16px;
+            height: 0px;
+            float: left;
+            display: block;
+            overflow: hidden;
+            margin: 2px 0 0 10px;
+            padding: 16px 0 0 0;
+            background-color: #fff;
+            }
+
+        .portfolio .navi a.active {
+            background-color: #3795ed;
+            }
+
+/*      -----------------------------------------------------------------
+        Item styles
+        -----------------------------------------------------------------       */
+
+        .portfolio .item img {
+            height: 250px;
+        }
+
+        .portfolio .item ul {
+            margin: 0;
+            color: #666;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #eee;
+            border-top: #bbb 1px solid;
+            }
+
+        .portfolio .item ul .title {
+            color: #333;
+            float: left;
+            font-style: italic;
+            }
+
+        .portfolio .item ul .brief {
+            color: #999;
+            float: right;
+            text-align: right;
+            margin-bottom: 10px;
+            font-family: monospace;
+            }
+
+        .portfolio .item ul .description {
+            clear: both;
+            padding: 10px;
+            background-color: #fff;
+            }
+
+/*      -----------------------------------------------------------------
+        Featured styles
+        -----------------------------------------------------------------       */

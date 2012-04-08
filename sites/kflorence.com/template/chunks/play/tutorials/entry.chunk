@@ -1,0 +1,8 @@
+<?php $row = $database->fetch($database->result); ?>
+      <ul>
+        <li>title: <?php p($row->title)?></li>
+        <li>date: <?php p($row->date)?></li>
+        <li>category: <?php p($row->category)?></li>
+        <li>views: <?php p($row->count)?></li>
+      </ul>
+      <p><?php p(nl2br(bbcode(htmlspecialchars($row->tutorial))))?></p>

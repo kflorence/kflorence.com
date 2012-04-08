@@ -1,0 +1,57 @@
+<?php
+
+// Set up flickr requests
+f()->load('Flickr');
+
+// Single photograph
+if (isset($url->array[2]) && ($url->array[2] != 'page'))
+{
+    $params = array(
+        'photo_id' => $url->array[2],
+        'secret'  => f('flickr')->secret
+    );
+
+    if (count($r = f('flickr')->call('photos.getInfo', $params)))
+    {
+        // Build path to photo
+        $photo_url = 'http://farm' .
+            $r->photo->farm . '.static.flickr.com/' .
+            $r->photo->server . '/' .
+            $r->photo->id . '_' .
+            $r->photo->secret . '.jpg';
+
+        print '<img src="'. $photo_url .'" alt="'. $r->photo->title->_content .'" />';
+    }
+
+    // No results
+    else print 'error';
+}
+
+// Photograph listing
+else
+{
+    $params = array (
+        'user_id'  => '97742267@N00',
+        'per_page' => 1,
+        'extras' => 'url_m,url_sq',
+        'page' => $pager->cur_page()
+    );
+
+    f('flickr')->result = f('flickr')->call('people.getPublicPhotos', $params);
+
+    // If we have results...
+    if (count(f('flickr')->result))
+    {
+        // Set up the pager
+        $pager->link_range = 2;
+        $pager->url = strip_query(PAGE_URL);
+        $pager->pages = f('flickr')->result->photos->pages;
+        $pager->cur_page = f('flickr')->result->photos->page;
+        $pager->num_items = f('flickr')->result->photos->total;
+        $pager->per_page = f('flickr')->result->photos->perpage;
+
+        $template->loadChunk('gallery');
+    }
+
+    else print 'error';
+}

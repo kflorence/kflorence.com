@@ -1,0 +1,41 @@
+<?php
+
+// Tutorial entry
+if (isset($url->array[2]) && ($url->array[2] != 'page'))
+{
+    $database->query = "SELECT *, DATE_FORMAT(date,'%M %e, %Y') as date FROM " .
+        "tutorials WHERE id='".$url->array[2]."' LIMIT 1";
+
+    // If we have results...
+    if ($database->hasResults($database->query()))
+    {
+        // load entry
+        $template->loadChunk('entry');
+
+        // update view count
+        $database->query("UPDATE tutorials SET count=count+1 WHERE id='".$url->array[2]."' LIMIT 1");
+    }
+
+    // No results
+    else $template->loadChunk('errors/404');
+}
+
+// Tutorial listing
+else
+{
+    // Set up the pager
+    $pager->generate($database->fetchResult("SELECT COUNT(*) FROM tutorials"), 5, 2);
+
+    // Set up our query
+    $database->query = "SELECT *, DATE_FORMAT(date,'%M %e, %Y') as date FROM " .
+        "tutorials ORDER BY id DESC LIMIT {$pager->start_item}, {$pager->per_page}";
+
+    // If we have results...
+    if ($database->hasResults($database->query()))
+    {
+        $template->loadChunk('list');
+    }
+
+    // No results
+    else $template->loadChunk('errors/404');
+}

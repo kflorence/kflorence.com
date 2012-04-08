@@ -1,0 +1,36 @@
+<?php
+
+f('template')->loadChunk('header');
+
+switch(f('url')->section)
+{
+    // About
+    case 'about':
+    {
+        f('template')->loadChunk('about');
+        break;
+    }
+
+    // Contact
+    case 'contact':
+    {
+        f('template')->loadChunk('contact');
+        break;
+    }
+
+    // Resume
+    case 'resume':
+    {
+        f('template')->loadChunk('resume');
+        break;
+    }
+
+    // 404 Error
+    default:
+    {
+        f('template')->loadChunk('errors/404');
+        break;
+    }
+}
+
+f('template')->loadChunk('footer');

@@ -1,0 +1,38 @@
+<?php
+
+// f('url')->build('js', 'jquery', 'jquery.easing.pack.js')
+
+switch(f('url')->section)
+{
+    // Web Design
+    case 'web_design':
+    {
+        f('template')->css = array(f('url')->build('css', 'kf.portfolio.css'));
+
+        f('template')->loadChunk('header');
+        f('template')->loadChunk('web_design');
+        f('template')->loadChunk('footer');
+        break;
+    }
+
+    // Photography
+    case 'photography':
+    {
+        f('template')->js = array(f('url')->build('js', 'kf.gallery.js'));
+        f('template')->css = array(f('url')->build('css', 'kf.gallery.css'));
+
+        f('template')->loadChunk('header');
+        f('template')->loadChunk('photography');
+        f('template')->loadChunk('footer');
+        break;
+    }
+
+    // 404 Error
+    default:
+    {
+        f('template')->loadChunk('header');
+        f('template')->loadChunk('errors/404');
+        f('template')->loadChunk('footer');
+        break;
+    }
+}

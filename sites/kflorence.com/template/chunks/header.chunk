@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-language" content="en-us" />
+
+    <title>Kyle Florence | Portfolio and Playground</title>
+
+    <meta name="author" content="Kyle Florence" />
+    <meta name="keywords" content="kyle florence web site design website development standards compliant usability accessibility minimal clean" />
+    <meta name="description" content="Online portfolio and playground of web designer Kyle Florence." />
+    <meta name="copyright" content="&#169; <?php p(date('Y'))?> Kyle Florence" />
+
+    <!--<link rel="shortcut icon" href="<?php p(f('url')->build('images', 'favicon.ico'))?>" type="image/vnd.microsoft.icon" />-->
+
+    <link rel="stylesheet" href="<?php p(f('url')->build('css', 'kf.base.css'))?>" type="text/css" media="screen" />
+<?php f('template')->loadChunk('css');?>
+
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.1.0/full/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="<?php p(f('url')->build('js', 'jquery', 'jquery.expandcollapse.pack.js'))?>"></script>
+    <script type="text/javascript" src="<?php p(f('url')->build('js', 'cufon', 'cufon.pack.js'))?>"></script>
+    <script type="text/javascript" src="<?php p(f('url')->build('js', 'cufon', 'cufon.univers.font.pack.js'))?>"></script>
+<?php f('template')->loadChunk('js');?>
+    <script type="text/javascript" src="<?php p(f('url')->build('js', 'kf.base.js'))?>"></script>
+  </head>
+
+  <body id="<?php p(f('url')->page)?>" class="<?php p(f('url')->section)?>">
+
+    <div id="wrapper"><!-- start #wrapper -->
+
+      <div id="top">
+        <span class="hide">Kyle Florence Web Designer</span>
+      </div>
+
+      <div id="container"><!-- start #container -->
+        <div id="content" class="clearfix"><!-- start #content -->
+
+          <div id="left"><!-- start #left -->
+            <h1><a href="<?php p(f('url')->build())?>">kyle florence</a></h1>
+
+<?php f('template')->loadChunk('navigation')?>
+          </div><!-- end #left -->
+
+          <div id="main"><!-- start #main -->
+            <h2><?php p((f('url')->section == 'index') ? f('url')->page : str_replace('_', ' ', f('url')->section))?></h2>
+<?php f('template')->loadChunk('errors/framework')?>

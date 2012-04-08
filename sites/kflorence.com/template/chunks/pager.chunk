@@ -1,0 +1,51 @@
+<div class="pager"><?php if ($pager->pages > 0):?><div class="pages"><p>page: <?php
+
+    // There is only one page
+    if ($pager->pages == 1) print ('1');
+
+    // Otherwise, there are multiple pages
+    else
+    {
+        // Set starting page
+        $start = ($pager->cur_page - $pager->link_range);
+        $start = (($start > 0) ? $start : 1);
+
+        // Set ending page
+        $limit = ($pager->cur_page + $pager->link_range);
+        $limit = (($limit < $pager->pages) ? $limit : $pager->pages);
+
+        // Print "first" link
+        if ($start > 1)
+        {
+            print (
+                '<a href="' . $pager->first_page() .
+                '" title="First Page">1</a> ... '
+            );
+        }
+
+        // Print page links
+        for ($i = $start; $i <= $limit; $i++)
+        {
+            // No need to link to the current page
+            if ($i == $pager->cur_page) print ($i . ' ');
+
+            // Otherwise, make a link to the page
+            else print (
+                '<a href="' . $pager->url . query_string(array('page' => $i)) .
+                '" title="Page ' . $i . '">' . $i . '</a> '
+            );
+        }
+
+        // Print "last" link
+        if ($limit < $pager->pages)
+        {
+            print (
+                '... <a href="' . $pager->last_page() .
+                '" title="Last Page">' . $pager->pages . '</a>'
+            );
+        }
+    }
+    ?><span><?php
+    print($pager->num_items);?> records returned, displaying <?php
+    print($pager->per_page);?> per page</span></p></div><?php
+else: print ('No records found.'); endif;?></div>

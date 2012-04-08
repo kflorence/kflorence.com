@@ -1,0 +1,24 @@
+            <ul class="nav">
+              <li>
+                <a id="trigger-me" title="me">me</a>
+                <ul class="subnav" id="subnav-me">
+                  <li id="me-about"><a href="<?php p(f('url')->build('me', 'about'))?>" title="about">about</a></li>
+                  <li id="me-contact"><a href="<?php p(f('url')->build('me', 'contact'))?>" title="contact">contact</a></li>
+                  <li id="me-resume"><a href="<?php p(f('url')->build('me', 'resume'))?>" title="resume">resume</a></li>
+                </ul>
+              </li>
+              <li>
+                <a id="trigger-work" title="work">work</a>
+                <ul class="subnav" id="subnav-work">
+                  <li id="work-web_design"><a href="<?php p(f('url')->build('work', 'web_design'))?>" title="web design">web design</a></li>
+                  <li id="work-photography"><a href="<?php p(f('url')->build('work', 'photography'))?>" title="photography">photography</a></li>
+                </ul>
+              </li>
+              <li>
+                <a id="trigger-play" title="play">play</a>
+                <ul class="subnav" id="subnav-play">
+                  <li id="play-projects"><a href="<?php p(f('url')->build('play', 'projects'))?>" title="projects">projects</a></li>
+                  <li id="play-tutorials"><a href="<?php p(f('url')->build('play', 'tutorials'))?>" title="tutorials">tutorials</a></li>
+                </ul>
+              </li>
+            </ul>

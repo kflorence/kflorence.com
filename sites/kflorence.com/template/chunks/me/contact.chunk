@@ -1,0 +1,60 @@
+<?php list($question, $answer) = generate_captcha()?>
+            <p>If you need to contact me for any reason, using the form below is the fastest
+            and easiest way to get in touch with me.  Just fill out all of the required
+            information and it will shoot an email directly to my inbox.  Reply times will
+            vary depending upon my current workload, but I try to get reply to most requests
+            within 24 hours.  Thanks!</p>
+
+            <h3>Service Requests</h3>
+            <div class="section">
+              <p>I am currently taking service requests as time allows.  This includes
+              paid web design and development work, tutorial requests, project feature
+              requests and future job considerations.  Although I am an avid believer
+              in open source and creative commons licensing, I've still got to put
+              food on the table.  For this reason I cannot make any guarantees on
+              charity work, sorry!</p>
+            </div>
+
+            <h3>Website Comments or Issues</h3>
+            <div class="section">
+              <p>I hope you have enjoyed browsing through my website.  If you have noticed
+              anything wrong with the site or have any comments or suggestions, please
+              let me know, I'd love to hear from you.  Also, please feel free to give me
+              a heads up if you feature one of my projects or tutorials somewhere.  Remember
+              that you are free to use any of my open source projects or tutorials any
+              way you like so long as you give me credit.</p>
+            </div>
+
+            <fieldset>
+              <legend>Form Mailer</legend>
+              <form method="post" action="<?php p(PAGE_URL);?>">
+                <input type="hidden" name="do" value="user:contact" />
+                <input type="hidden" name="captcha" value="<?php p($answer);?>" />
+
+                <div id="contact-form" class="clearfix">
+                  <div class="left">
+                    <p class="input">
+                      <span class="required"><strong>Name</strong></span>
+                      <input type="text" name="name" />
+                    </p>
+                    <p class="input">
+                      <span class="required"><strong>Email</strong></span>
+                      <input type="text" name="email" />
+                    </p>
+                    <p class="input">
+                      <span class="required"><strong>Anti-Spam Question:</strong><br /><?php p($question);?></span>
+                      <input type="text" name="answer" />
+                    </p>
+                  </div>
+
+                  <div class="right">
+                    <p class="input">
+                      <span class="required"><strong>Query</strong></span>
+                      <textarea name="query" rows="5" cols="50"></textarea>
+                    </p>
+                  </div>
+
+                  <input type="submit" value="Submit" />
+                </div>
+              </form>
+            </fieldset>

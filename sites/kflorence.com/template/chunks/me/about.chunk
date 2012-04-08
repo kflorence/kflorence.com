@@ -1,0 +1,53 @@
+        <div class="img-right">
+          <img src="<?php p(BASE_DIR);?>images/pages/about-kyle.gif" alt="Kyle Florence" />
+          <span>Dreamer, nothing but a dreamer...</span>
+        </div>
+
+        <p>Hello, my name is Kyle Florence and I have been developing for the web since 2001.  I initially got
+        into web design as a mesh between my interests in <acronym title="mIRC Scripting Language">MSL</acronym>
+        (and subsequent desire to learn more useful programming languages), and making <a href="http://en.wikipedia.org/wiki/Skin_(computing)" title="Skins">skins</a>
+        for the popular windows based music player <a href="http://en.wikipedia.org/wiki/Winamp">Winamp</a>.
+        My work has been noted for its clean, professional and minimal design techniques combined with hand coded,
+        <a href="http://www.w3.org/" title="The World Wide Web Consortium">web standards compliant</a> and
+        <a href="http://www.w3.org/WAI/" title="Web Accessibility Initiative">accessible</a>
+        <acronym title="Extensible Hypertext Markup Language">XHTML</acronym> and <acronym title="Cascading Style Sheets">CSS</acronym>.
+        Rather than being graphic heavy, bloated or trendy, my work emphasizes functionality and simplicity.
+        This is not to say that it will be bland or non-interactive, but rather that features will be added
+        with accessibility in mind (so that they degrade gracefully if unsupported) and that design elements
+        will be added only when necessary.</p>
+
+        <p>Though my specialty has been in web design and programming, I have also explored 3D level design,
+        photography and video game development.  In my senior year at San Diego State University, I was able to
+        play around with the <a href="http://en.wikipedia.org/wiki/Source_Engine" title="Source Engine">Source Engine</a>
+        to develop a very simple <a href="http://en.wikipedia.org/wiki/Half-Life_2" title="Half-Life 2">Half-Life 2</a> mod that included
+        3rd-person character movement.  This required me to become familiar with C++ (the source engine does not have its own scripting language), Valve's
+        <a href="http://en.wikipedia.org/wiki/Hammer_Editor" title="Hammer Editor">Hammer Editor</a> (which I had previously
+        used to develop several maps for the video game <a href="http://en.wikipedia.org/wiki/Day_of_Defeat" title="Day of Defeat">Day of Defeat</a>
+        on the previous Half-Life engine, GoldSource) and the general schema of the source file structure.  During this
+        time I also developed a typing-based game in <a href="http://en.wikipedia.org/wiki/Adobe_Director" title="Adobe Director">Adobe Director</a> using JavaScript,
+        instead of <a href="http://en.wikipedia.org/wiki/Lingo_(programming_language)" title="Lingo">Lingo</a>, as the underlying language
+        and continued development on my video game (it currently does not have a name) in Java (which thus far includes a custom made, 2D,
+        tile-based map rendering engine, a sprite storage system and unit pathfinding).</p>
+
+        <h3>My Hobbies</h3>
+        <div class="section">
+          <p>Aside from programming and development, I am an avid <a href="http://steamcommunity.com/id/kflorence" title="Steam Community">PC gamer</a>,
+          <a href="http://www.flixster.com/user/kflorence" title="Flixster">movie addict</a> and <a href="http://beeradvocate.com/user/profile/kflorence" title="Beer Advocate">beer enthusiast</a>.
+          Oh, and I'm almost always <a href="http://www.flixster.com/user/kflorence" title="last.fm">listening to music</a>.  When I'm not on the computer (I try to get away as much as possible),
+          I enjoy photography (digital and film), hiking, mountain biking, traveling and exploring.  I am a graduate of <a href="http://www.sdsu.edu/" title="San Diego State University">San Diego State University</a>
+          and I plan on going to graduate school to further my education and open of the possibility of teaching at the college level in the future.  I have had the pleasure of living throughout the United States
+          (California, New Mexico, Oregon, Virginia and Utah thus far) and experiencing a multitude of cultures and climates.  I'm at home anywhere with cultural diversity, mountains, seasons, weather and solitude.</p>
+        </div>
+
+        <h3>This Website</h3>
+        <div class="section">
+          <p>Starting with my first website back in 2001 (a horrid, heavily graphical, ImageReady-sliced mess),
+          I have been continually fine-tuning my design style and my appreciation of web standards and accessibility.
+          This, the seventh version of my website, has come to heavily reflect these advances.  I have designed it
+          to be both visually appealing, interactive and functional, all the while maintaining the accessibility and
+          compliance that I have come to expect of any work that I produce.  I hope that you are able to quickly and
+          easily find what you have come looking for and enjoy some of my work while you're at it.  I'm always open to
+          comments and suggestions to better myself and my work, so if you have anything to add please don't hesitate
+          to <a href="<?php p(f('url')->build('me', 'contact'))?>" title="contact me">contact me</a>.
+          </p>
+        </div>

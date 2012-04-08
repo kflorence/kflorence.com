@@ -1,0 +1,23 @@
+<?php $photo = $flickr->result->photos->photo->{0}; ?>
+
+            <div class="gallery">
+              <?php $pager->output()?>
+              <div class="controls">
+                <a class="prevPage" title="Previous Page">previous</a>
+                <a class="nextPage" title="Previous Page">next</a>
+                <div class="scrollable">
+                  <ul class="items"><!-- Filled out dynamically --></ul>
+                </div>
+              </div>
+              <div class="current">
+                <a href="<?php p($pager->previous_page())?>" class="prevItem" title="previous image">
+                  <span><!-- Previous Image --></span>
+                </a>
+                <div id="image_wrap">
+                  <img src="<?php p($photo->url_m)?>" alt="<?php p($photo->title)?>" />
+                </div>
+                <a href="<?php p($pager->next_page())?>" class="nextItem" title="next image">
+                  <span><!-- Next Image --></span>
+                </a>
+              </div>
+            </div>
